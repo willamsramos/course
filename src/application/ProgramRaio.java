@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import util.Calculadora;
+import util.CalculadoraPi;
 
 public class ProgramRaio {
 
@@ -11,18 +11,18 @@ public class ProgramRaio {
 
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
-    Calculadora calc = new Calculadora();
+
 
     System.out.print("Digite o raio: ");
     double raio = sc.nextDouble();
 
-    double c = calc.circunferencia(raio);
+    double c = CalculadoraPi.circunferencia(raio);
 
-    double v = calc.volume(raio);
+    double v = CalculadoraPi.volume(raio);
 
     System.out.printf("Circunferência: %.2f%n", c);
     System.out.printf("Volume: %.2f%n", v);
-    System.out.printf("PI valor: %.2f%n", calc.PI);
+    System.out.printf("PI valor: %.2f%n", CalculadoraPi.PI);
 
     sc.close();
   }
