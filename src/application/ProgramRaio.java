@@ -12,7 +12,6 @@ public class ProgramRaio {
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
 
-
     System.out.print("Digite o raio: ");
     double raio = sc.nextDouble();
 
